@@ -18,17 +18,17 @@ fs.readFile('test-file.txt', () => {
     process.nextTick(() => console.log('process.nextTick()'));
 
     crypto.pbkdf2('password', 'salt', 10000, 1024, 'sha512', () => {
-        console.log(Date.now() - start, 'password encrypted')
-    })
+        console.log(Date.now() - start, 'password encrypted');
+    });
     crypto.pbkdf2('password', 'salt', 10000, 1024, 'sha512', () => {
-        console.log(Date.now() - start, 'password encrypted')
-    })
+        console.log(Date.now() - start, 'password encrypted');
+    });
     crypto.pbkdf2('password', 'salt', 10000, 1024, 'sha512', () => {
-        console.log(Date.now() - start, 'password encrypted')
-    })
+        console.log(Date.now() - start, 'password encrypted');
+    });
     crypto.pbkdf2('password', 'salt', 10000, 1024, 'sha512', () => {
-        console.log(Date.now() - start, 'password encrypted')
-    })
+        console.log(Date.now() - start, 'password encrypted');
+    });
 });
 
 console.log('Hello Top-level code');
